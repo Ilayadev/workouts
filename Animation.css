@@ -1,0 +1,24 @@
+div{
+	width: 200px;
+	height: 100px;
+	
+	position:relative;
+	animation-name: zoho;
+	animation-duration: 5s;
+	animation-iteration-count: 1;
+	background-color: green;
+	animation-fill-mode: both;
+	animation-delay: 2s;
+	
+	/*animation-direction: reverse;*/
+	
+
+
+}
+@keyframes zoho{
+	0% {background-color: green; left:0px; top:0px;}
+	25% {background-color: blue;left:150px; top:0px;}
+	50% {background-color: yellow;left:300px; top:0px;}
+	75% {background-color: pink;left:450px; top:0px;}
+	100% {background-color: green; left:0px; top:0px;}
+}

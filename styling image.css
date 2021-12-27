@@ -1,0 +1,111 @@
+	.h1{
+	border-radius: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right:40%;
+
+}h2{
+	text-align: center;
+}.image{
+
+	border:5px solid #ddd;
+	padding: 10px;
+	display: block;
+	margin-left: auto;
+	margin-right:40%;
+}
+.polaraid{
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  margin-top:10px;
+
+	width:40%;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container{
+	padding: 20px;
+	text-align: center;
+}.polaraid >img{
+	width: 100%;
+}.g1>img{
+	opacity: 0.5;
+	width: 100%;
+	height: auto;	
+
+}.g1{
+    
+	position: relative;
+	border: 2px solid;
+	
+	
+}.tl{
+	position: absolute;
+	top:10px;
+	left: 10px;
+	font-size: 20px;
+}
+.tr{
+	position: absolute;
+	top:10px;
+	right:  10px;
+	font-size: 20px;
+}
+.bl{
+	position: absolute;
+	bottom:10px;
+	left: 10px;
+	font-size: 20px;
+}
+.br{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	font-size: 20px;
+}
+.cen{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	font-size: 20px;
+}
+.zoho{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 20px;
+	margin:10px;
+
+}.w1:hover{
+	filter:blur(4px);
+}
+.w2:hover{
+	filter: brightness(150%);
+}.w3:hover{
+
+	 filter: contrast(180%);
+}.w4:hover{
+	filter: grayscale(100%);
+}
+.w5:hover{
+	filter: hue-rotate(180deg);
+}
+.w6:hover{
+	filter: invert(100%);
+}
+.w7:hover{
+	filter: saturate(7);
+}
+.w8:hover{
+	filter: opacity(50%);
+}
+.w9:hover{
+	filter: sepia(100%);
+}
+.w10:hover{
+	filter: drop-shadow(8px 8px 10px green);
+}
+.w11:hover{
+	transform: scale(-1);
+}

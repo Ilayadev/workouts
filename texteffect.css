@@ -1,0 +1,38 @@
+/*.h1{
+	overflow: hidden;
+	white-space: nowrap;
+
+	text-overflow: clip;
+	width: 100px;
+}*/
+.h2{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 100px;
+
+}
+.h3{
+	overflow: hidden;
+	white-space: nowrap;
+	width: 100px;
+}
+.h3:hover{
+	overflow: visible
+
+}p{
+	border:2px solid;
+}div{
+	border:2px solid ;
+	padding: px;
+	margin: 5px;
+	width:200px;
+	word-wrap: break-word;
+	word-break: break-all;
+	word-break: keep-all;
+	text-align-last: inter-characters;
+	
+	
+}.h1{
+	writing-mode: vertical-rl;
+}

@@ -1,0 +1,36 @@
+div{
+	background-color: yellow;
+	border:2px solid;
+	width: 100px;
+	padding: 10px;
+	margin: 10px; 
+	height:100px;
+	transition: width 1s,height 2s,transform 1s;
+}
+.h1:hover{
+	width: 300px;
+	
+	transition-timing-function:ease;}
+	
+.h2:hover{
+	width: 300px;
+	
+	transition-timing-function:ease-in; 
+}
+.h3:hover{
+	width: 200px;
+	
+	transition-timing-function:ease-out; 
+	transform: rotate(180deg); 
+
+}
+.h4:hover{
+	width: 300px;
+	
+	transition-timing-function:ease-in-out; 
+}
+.h5:hover{
+	width: 300px;
+	
+	transition-timing-function:linear; 
+}

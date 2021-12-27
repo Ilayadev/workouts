@@ -1,0 +1,19 @@
+.main{
+/*
+	background-image: url(/home/zoho/Downloads/image1.jpeg) ;
+	background-position: top left;*/
+	/*background-repeat: no-repeat;*/
+	/*background-size: cover;*/
+	
+    border:3px solid;
+    background-color: yellow;
+    /*background-origin:border-box;*/
+    background-clip: content-box;
+
+    
+    
+    text-align: center;
+    padding: 20px;
+    height: 200px;
+
+}

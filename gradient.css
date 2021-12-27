@@ -1,0 +1,39 @@
+.item1{
+
+	background-image: linear-gradient(to top,green,blue,white);
+	text-align: center;
+	padding-top: 50%;
+	box-sizing: border-box;
+	height: 200px;
+}.item2{
+
+	background-image: linear-gradient(to left,green,blue,white);
+	text-align: center;
+	padding-top: 50%;
+	box-sizing: border-box;
+
+}
+.item3{
+
+	background-image: linear-gradient(to right ,green,blue,white);
+	text-align: center;
+	padding-top: 50%;
+	box-sizing: border-box;
+
+}
+.item4{
+
+	background-image: linear-gradient(to bottom,green,blue,white);
+	text-align: center;
+	padding-top: 50%;
+	box-sizing: border-box;
+
+}
+/*.item5{
+
+	background-image: linear-gradient(to right,green,blue,white);
+	text-align: center;
+	padding-top: 50%;
+	box-sizing: border-box;
+
+}*/

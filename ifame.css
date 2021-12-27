@@ -1,0 +1,26 @@
+.container{	
+	display: grid;
+	grid-template-columns:auto auto auto;
+	grid-auto-rows:100px 300px 100px;
+	grid-gap:20px;
+	background-color:red;
+}
+.item1{
+	grid-column:1/4;
+	text-align: center;
+	font-size: 50px;
+}
+.item3{
+     grid-column:2/4;}
+.item2{
+	background-color:gold;
+	font-size: 20px;
+	text-align: center;
+}
+
+.container>div:not(.item2){
+	background-color:yellow;
+}
+iframe{
+	padding-left: 50px;
+}

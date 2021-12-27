@@ -1,0 +1,27 @@
+.container{
+	width: 100%;
+	padding: 20px;
+	font-size: 50px;
+	background-color: pink;
+	text-align: center;
+
+}.main{
+	background-color: yellow;
+	padding: 10px;
+	text-align: center;
+	width: 40%;margin: 5px;
+	display: block;
+	position: relative;
+}.main>span{
+	background-color:red;
+	border-radius: 10px;
+	text-align: center;
+	padding:10px;
+	visibility: hidden;
+	color: black; 
+	position: absolute;
+	right:-250px;
+	top:-5px;
+}.main:hover span{
+	visibility: visible;
+}

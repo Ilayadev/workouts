@@ -1,0 +1,28 @@
+.main{
+	margin: px;
+	padding:40px;
+	border:1px solid #ddd; 
+	background-color: pink;
+}
+.h1{
+	resize: horizontal;
+	overflow: auto;}
+
+	.h2{
+		resize: vertical;
+		overflow: auto;
+	}
+	.h3{
+		resize: both;
+		overflow: auto;
+	}
+    .h5{
+    	border:2px solid;
+    	
+    	outline: 3px solid skyblue;
+    	outline-offset:15px;
+    	margin-top: 30px;
+    }
+
+
+

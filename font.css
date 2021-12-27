@@ -1,0 +1,15 @@
+h1:not(.h1){
+	font-family: 'Palette Mosaic', cursive;}
+h2{font-family: 'Style Script', cursive;
+}
+h3{
+	font-family: 'Lobster', cursive;}
+h4{font-family: 'WindSong', cursive;
+}
+/*@font-face{
+	font-family: dark;
+	src:url(home/zoho/Downloads/cedarville_cursive.zip/cedarville cursive-regular.ttf);
+}
+.h1{
+	font-family: dark;
+}*/
