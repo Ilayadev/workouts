@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="/index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="element1">
+            <div class="columnreodertag"><span>ColumnReorder</span></div>
+            <div class="child-container">
+                <div class="child">
+                    <input type="radio" id="true" name='columnreorder' value=true onchange="changingvalue(event)">
+                    <label for="true" class="lable">True</label>
+                </div>
+                <div class="child">
+                    <input type="radio" id='false' name='columnreorder' value=false onchange="changingvalue(event)"
+                        checked=rue>
+                    <label for="false" class="lable">False</label>
+                </div>
+            </div>
+        </div>
+        <div class="element3">
+            <div class="tag-value-parent">
+                <div class="child"><span class="rowheight columnreodertag">Rowheight</span></div>
+                <div class="input-parent"><input type="number" class="inputelement"></div>
+            </div>
+            <div class="tag-value-parent">
+                <div class="child"><span class="rowheight columnreodertag">Tableheight</span></div>
+                <div class="input-parent"><input type="number" class="inputelement"></div>
+            </div>
+        </div>
+        <div class="element2">
+            <div class="columnnametag columnreodertag ">ColumnDetails</div>
+            <div class="child-cotainer2">
+                <div class="child2">
+                   <div class="columndetails">
+                    <div class="nameparent">
+                        <span class="tag">Name</span>
+                        <input type="text" class="inputelement">
+                    </div>
+                    <div class="type nameparent">
+                        <span class="tag">Type</span>
+                        <select name="" id="" class="inputelement">
+                            <option value="Number">Number</option>
+                            <option value="String">String</option>
+                            <option value="Boolean">Boolean</option>
+                        </select>
+                    </div>
+                    <div class="element nameparent">
+                        <span class="tag">Element</span>
+                        <select name="" id="" class="inputelement">
+                            <option value="Span">Span</option>
+                            <option value="Div">Div</option>
+                        </select>
+                    </div>
+                   </div>
+                   <div class="incre-decre-container">
+                       <div class="increment button"><span class="icon" class="material-symbols-outlined">
+                        add
+                        </span></div>
+                       <div class="decrement button"><span class="icon" class="material-symbols-outlined">
+                        remove
+                        </span></div>
+                   </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./table-component.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="./table-component.js"></script>
+</head>
+<body onload="onloading()">
+    <div class="container">
+        <div class="component-parent">
+            <div class="component-panel">
+                <div class="component-overall">
+                    <div class="childrencontainer-parent">
+                        <div class="childrencontainer">
+                            <!-- <slot name="columncell"></slot>     -->
+                            <!-- <div class='overlapingelement'></div> -->
+                        </div>
+                    </div>
+                    <div class="dummy"></div>
+                </div>
+            </div>
+            <div class="data-panel">
+                <div class="data-componentparent">
+                    <div class="reorder-component">
+                        <div class="tag-parent"><span>ColumnReorder</span></div>
+                        <div class="tag-value-parent">
+                            <div class="tag-value">
+                                <input type="radio" id="true" name='columnreorder' value=true onchange="changingvalue(event)">
+                                <label for="true" class="lable">True</label>
+                            </div>
+                            <div class="tag-value">
+                                <input type="radio" id='false' name='columnreorder' value=false onchange="changingvalue(event)"
+                                    checked=false>
+                                <label for="false" class="lable">False</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-table-height-component">
+                        <div class="tag-value-parent">
+                            <div class="tag-parent"><span class="rowheight columnreodertag">Rowheight</span></div>
+                            <div class="input-parent"><input type="number" class="inputelement"  onkeyup="assingRowHeight(event)"onfocus="focusOnRowElement(event)" onblur="blurOnRowElement(event)"></div>
+                        </div>
+                        <div class="tag-value-parent">
+                            <div class="tag-parent"><span class="rowheight columnreodertag">Tableheight</span></div>
+                            <div class="input-parent"><input type="number" id="tableinput" class="inputelement"  onkeyup="assingTableHeight(event)" onfocus="focusOnTableElement(event)" onblur="blurOnTableElement(event)"></div>
+                        </div>
+                    </div>
+                    <div class="columns-data-component">
+                        <div class="tag-parent "><span>ColumnDetails</span></div>
+                        <div class="data-parent">
+                            <div class="dataelement" columnNo=1>
+                               <div class="data-details-panel">
+                                <div class="details-tag-value-parent">
+                                    <span class="tag">Name</span>
+                                    <input type="text" class="inputelement" onblur="blurOnColumnNameElement(event)" onfocus="focusOnColumnNameElement(event)">
+                                </div>
+                                <div class="details-tag-value-parent">
+                                    <span class="tag">Type</span>
+                                    <input  list="type" class="inputelement" >
+                                     <datalist  id="type">                                       
+                                        <option value="Number">Number</option>
+                                        <option value="String">String</option>
+                                        <option value="Boolean">Boolean</option>
+                                     </datalist>                               
+                                </div>
+                                <div class="details-tag-value-parent">
+                                    <span class="tag">Element</span>
+                                    <input list="Elements" class="inputelement">
+                                       <datalist id="Elements">
+                                        <option value="Span">Span</option>
+                                        <option value="Div">Div</option>
+                                       </datalist>                                    
+                                </div>
+                               </div>
+                               <div class="incre-decre-panel">
+                                   <div class="increment button" onclick="addingcolumn(event)"><span id="incre-icon" class="material-symbols-outlined">
+                                    add
+                                    </span></div>
+                                   <div class="decrement button" onclick="removingcolumn(event)"><span  id="decre-icon" class="material-symbols-outlined">
+                                    remove
+                                    </span></div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=data-value-component>
+                        <div class="reorder-component">
+                            <div class="tag-parent"><span>DataType</span></div>
+                        <div class="tag-value-parent">
+                            <div class="tag-value">
+                                <input type="radio" id="true" name='data' value=Server onchange="changingDataType(event)">
+                                <label for="true" class="lable">Server</label>
+                            </div>
+                            <div class="tag-value">
+                                <input type="radio" id='false' name='data' value=Manual onchange="changingDataType(event)"
+                                    checked=false>
+                                <label for="false" class="lable">Manual</label>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="data-parent">
+                            <textarea name="" id="" cols="10" rows="9"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
