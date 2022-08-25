@@ -1,0 +1,19 @@
+.title-component-parent{
+    background-image: url("./banner.png");
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    background-attachment: fixed;
+}
+.title-component{
+    width: 1280px;  
+    display: flex;
+    align-items: center;
+    align-self: stretch;   
+   
+}
+.title{
+    color:var(--titlecolor);
+    font-size: 25px;
+    font-weight: 700;
+}

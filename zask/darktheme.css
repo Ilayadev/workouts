@@ -1,0 +1,64 @@
+body{
+    --container:#1d282f;
+    --primary-color:rgb(48,175,249);
+    --secondary-color:#1d282f;
+    --white :#28363f;
+    --input:#1d282f;
+    color: whitesmoke;
+    --darkwhite:#fff;
+    --lightgray:#8986861f;  
+}
+.i1{
+    background-color: var(--white);
+}
+.htwo{
+    background-image: none;
+    background-color: var(--container);
+}
+.head{
+    color: var(--darkwhite);
+}
+.question{
+  color: var(--darkwhite);
+}
+.num{
+    color: var(--darkwhite);
+}
+.ques{
+    color: var(--darkwhite);
+}
+.i1:first-child{
+    border-bottom: 1px solid var(--container);
+    color: lightgreen;
+}
+.communites:last-child{
+    background-color: var(--container);
+}
+.filter{
+    background-color: var(--lightgray);
+}
+.new-drop{
+    background-color: var(--lightgray);
+}
+.subscribe{
+    background-color:var(--lightgray);
+    color: var(--darkwhite);
+}
+.button{
+    background-color: var(--container);
+    color: var(--darkwhite);
+    border: none;
+}
+.button:hover{
+    background-color: var(--lightgray);
+    color:var(--darkwhite) ;
+}
+.drop-list:first-child{
+    background-color:var(--lightgray) ;
+}
+.drop-list:hover{
+    background-color:var(--lightgray) ;
+}
+.input{
+    color: var(--darkwhite);
+}

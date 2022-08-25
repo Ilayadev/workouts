@@ -1,0 +1,30 @@
+<div class="question-cards">
+    <div class="answer-panel">
+        <div class="i1">
+            <span class="n1">Answers</span>
+            <span class="m1">{{question.answers}}</span>
+        </div>
+        <div class="i1">
+            <span class="n1">Views</span>
+            <span class="m1">{{question.views}}</span>
+        </div> <div class="i1">
+            <span class="n1">Score</span>
+            <span class="m1">{{question.scores}}</span>
+        </div>
+    </div>
+    <div class="content-panel">
+        <div class="ques-element">{{question.header}}</div>
+         <div class="des-element">{{question.description}}<p>The hero's birthday is {{ birthday | date }}</p></div>
+         <div class="user-details-element">
+             <div class="tags-parent">     
+                 <app-tags class="tags" *ngFor="let tags of question.tags" [tagname]="tags"></app-tags>            
+             </div>
+             <div class="user-details">
+                <div class="asked-time">{{question.useremail}}</div>
+                 <div class="user-email">{{question.askedtime}}</div>                 
+             </div>
+             <div class="user-icon"></div>
+         </div> 
+    </div>
+</div>
+

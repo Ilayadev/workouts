@@ -1,0 +1,7 @@
+<div class="body-element" [ngClass]="{lighttheme:theme==false,darktheme:theme}">
+    <div class="overall-container">
+            <app-header class="header"></app-header>
+            <app-title class="title"></app-title>
+            <app-questionoverall (theme)="changingtheme($event)" class="question-overall"></app-questionoverall>
+    </div>
+</div>

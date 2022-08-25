@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: grid;
+    height: 80vh;
+    width: 100vw;
+    grid-template: repeat(auto-fill,100px)/repeat(auto-fill,136px);
+    grid-gap: 7px;
+}
+.person{
+    display: grid;
+    grid-template: repeat(2,1fr)/repeat(3,1fr);
+    grid-gap: 3px;
+}
+.person div{
+    background-color:yellow;
+    border: 1px solid ;
+}
+#t1001{
+    display: none;
+}
+.button{
+    padding: 40px;
+}

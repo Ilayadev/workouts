@@ -1,0 +1,16 @@
+<div class="question-overall-component">
+    <div class="question-panel">
+            <div class="questions-options-parent">
+                 <div class="selectedtag">Question</div>
+                <div class="filter">
+                    <span class="filt-icon"></span>
+                    <span class="filt-text">Filters</span>
+                </div>
+                <div class="theme" (click)="selectingtheme()">Theme</div>
+                <div></div>
+            </div>
+            <div class="questions-component-parent">
+                <app-question-cards *ngFor="let question of questioncards" [question]="question"></app-question-cards>
+            </div>
+    </div>
+</div>

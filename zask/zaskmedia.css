@@ -1,0 +1,113 @@
+@media only screen and (max-width:1230px) {
+    .aside-con{
+        width: 355px;
+    }
+}
+@media only screen and (max-width:1200px) {
+    .aside-con{
+        width: 330px;
+    }
+}
+@media only screen and (max-width:1165px) {
+    .header-con{
+        max-width: 960px;
+        margin: auto;
+    }
+    .htwo-con{
+        max-width: 960px;
+        margin: auto;
+    }
+    .main{
+        max-width: 960px;
+        margin: auto;
+    }
+    .aside-con{
+        width: 275px;
+    }
+    .subscribe{
+        display: none;
+    }
+    .ques{
+        padding: 6px 12px;
+    }
+    .q1{
+        padding: 6px 12px;
+    }
+    .search-con{
+          flex-grow: 0;
+    }
+   .det-con{
+        width:fit-content;
+   }
+   .search-box{
+       width: 180px;
+   }
+   .filt-hidd-con{
+       width: 33%;
+   }
+}
+@media only screen and (max-width: 995px) {
+   .line-con{
+       display: block;
+   }
+   .icon-con{
+       display: none;
+   }
+   .ques{
+       display: none;
+   }
+   .q1{
+       display: none;
+   }
+   .pro-hov{
+    display: none;
+   }
+   .icon-ul-con{
+       width: fit-content;
+   }
+   .header-con{
+       justify-content: space-between;      
+   }
+   .fix-box{
+       display: none;
+   }
+   .ques-con{
+       width: 100%;
+   }
+   .fix-con{
+       display: block;
+   }
+   .htwo-con{
+       max-width: 800px;
+   }
+   .main{
+       max-width: 800px;
+   }
+}
+@media only screen and (max-width:665px) {
+      .element-one{
+          flex-direction: column;
+      }
+      .about-con{
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-template-rows: 1fr;
+      }
+      .i1{
+          flex-grow: 1;
+      }
+      .question{
+          display: none;
+      }
+      .third{
+          display: none;
+      }
+      .button{
+          margin-top: 0px;
+      }
+      .content-con{
+          width: 100%;
+      }
+      .filt-hidd-con{
+        width: 100%;
+    }
+}

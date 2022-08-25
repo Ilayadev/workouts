@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="zask.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="zaskmedia.css" >
+    <link rel="stylesheet" href="lighttheme.css">
+    <link rel="stylesheet" href="darktheme.css" disabled>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="zask.js"></script>
+    <title>ZAsk</title>
+</head>
+
+<body onload="loader()">
+    <div class="animation-con">
+        <div class="loader-con">
+            <div class="loader"></div>
+        </div>
+        <div class="ani-con">
+            <div class="anima-box">
+                <img src="zasklogo.png" alt="" id="loader-img">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="fix-con">
+            <div class="fix-icon"></div>
+        </div>
+        
+        <div class="header" >
+            <div class="header-con">
+                <div class="line-con">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="icon-ul-con">
+                    <div class="icon-con">
+                        <div class="icon"></div>
+                        <div class="arr-con">
+                            <span class="arr" onclick="arrowdropdown()">
+                                <div class="icon-drop-con">
+                                    <div class="component">My components</div>
+                                    <div class="commu-con">
+                                        <div class="communites">
+                                            <span class=" di">
+
+                                            </span>
+                                            <span class="icon-drop-text"> ADaudit plus</span>
+                                            <span class="home-icon"></span>
+
+
+                                        </div>
+                                        <div class="communites">
+                                            <span class=" di2 di">
+
+                                            </span>
+                                            <span class="icon-drop-text"> ADSSP</span>
+                                            <span class="home-icon"></span>
+
+
+                                        </div>
+                                        <div class="communites">
+                                            <span class=" v1"> </span>
+                                            <span class="icon-drop-text"> Logs Ask</span>
+                                            <span class="home-icon"></span>
+
+
+                                        </div>
+                                        <div class="communites">
+                                            <span class=" v1 v2"> </span>
+                                            <span class="icon-drop-text">Pali</span>
+                                            <span class="home-icon"></span>
+
+
+                                        </div>
+                                        <div class="communites">
+                                            <span class=" v1 v3"> </span>
+                                            <span class="icon-drop-text">Work from home</span>
+                                            <span class="home-icon"></span>
+
+
+                                        </div>
+                                        <div class="communites">
+                                            <span class=" v1 "> </span>
+                                            <span class="icon-drop-text">ZAsk</span>
+                                            <span class="home-icon"></span>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="ul-con">
+                        <a class="ques ">Question</a>
+                        <a class="art q1">Articles</a>
+                        <a class="tag q1"> Tags</a>
+                        <a class="user q1">Users</a>
+                        <div class="search-con">
+                            <div class="search-box" onmouseenter="searchaction()" onmouseleave="cancelingsearch()">
+                                <span class="search-icon"></span>
+                                <input type="text" class="input" placeholder="Search">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="det-con">
+                   <div class="hov-con">
+                    <div class="pho-con pro-hov">
+                        <span class="photo"></span>
+                    </div>
+                    <div class="dot-con pro-hov">
+                        <div class="d1">4.3K</div>
+                        <div class="d1">
+                            <span class="dot1"></span>
+                            <span class="t1">0</span>
+                        </div>
+                        <div class="d1">
+                            <span class="dot2 dot1"></span>
+                            <span class="t1">0</span>
+                        </div>
+                        <div class="d1">
+                            <span class="dot3 dot1"></span>
+                            <span class="t1">0</span>
+                        </div>
+                    </div>
+                   </div>
+                    <div class="icons-con">
+                        
+                        <div class="s1">
+                            <span class="icon-hov"></span>
+                        </div>
+                     
+                        <div class="s2 s1">
+                            <span class="icon-hov"></span>
+                        </div>
+                        
+                        <div class=" s3 s1">
+                            <span class="icon-hov"></span>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="htwo">
+            <div class="htwo-con">
+                <div class="zask">ZAsk</div>            
+            </div>
+            <div class="filt-hidd-con">
+                <div class="hidd-first">
+                    <span class="fil">Filters</span>
+                    <button class="cancel can-app" onclick="cancelingfilt()">cancel</button>
+                    <button class="apply can-app">apply</button>
+                </div>
+                <div class="clrall ask askcol">Clear All</div>
+                <div class="hidd-ele-con">
+                    <div class="ele-con">
+                        <span class="ele.text">CATEGORY</span>
+                        <div class="ele-icon">
+                            <span class="j1"></span>
+                            <span class="arr"></span>
+                        </div>
+                    </div>
+                    <div class="ele-con">
+                        <span class="ele.text">TAGS</span>
+                        <div class="ele-icon">
+                            <span class="j1"></span>
+                            <span class="arr"></span>
+                        </div>
+                    </div>
+                    <div class="ele-con">
+                        <span class="ele.text">AUTHORS</span>
+                        <div class="ele-icon">
+                            <span class="j1"></span>
+                            <span class="arr"></span>
+                        </div>
+                    </div>
+                    <div class="ele-con">
+                        <span class="ele.text">CREATED TIME</span>
+                        <div class="ele-icon">
+                            <span class="j1"></span>
+                            <span class="arr"></span>
+                        </div>
+                    </div>
+                    <div class="ele-con">
+                        <span class="ele.text">SCORE</span>
+                        <div class="ele-icon">
+                            <span class="j1"></span>
+                            <span class="arr"></span>
+                        </div>
+                    </div>
+                    <div class="ele-con">
+                        <span class="ele.text">ANSWER COUNT</span>
+                        <div class="ele-icon">
+                            <span class="j1"></span>
+                            <span class="arr"></span>
+                        </div>
+                    </div>
+                    <div class="ele-con">
+                        <span class="ele.text">ANSWER</span>
+                        <div class="ele-icon">
+                            <span class="j1"></span>
+                            <span class="arr"></span>
+                        </div>
+                    </div>
+                    <div class="ele-con">
+                        <span class="ele.text">ANSWER BY</span>
+                        <div class="ele-icon">
+                            <span class="j1"></span>
+                            <span class="arr"></span>
+                        </div>
+                    </div>
+                    <div class="ele-con">
+                        <span class="ele.text">VIEWS</span>
+                        <div class="ele-icon">
+                            <span class="j1"></span>
+                            <span class="arr"></span>
+                        </div>
+                    </div>
+                    <div class="ele-con">
+                        <span class="ele.text">BOUNTY</span>
+                        <div class="ele-icon">
+                            <span class="j1"></span>
+                            <span class="arr"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-con">
+            <div class="main">
+                <div class="ques-con">
+                    
+                        <div class="ques-main">
+                            <div class="question">Question</div>
+                            <div class="filter" onclick="filteraction()">
+                                <span class="filt-icon"></span>
+                                <span class="filt-text">Filters</span>
+                            </div>
+                            <div class="new-con">
+                                <div class="theme" onclick="themechanging()">Theme</div>
+                                <div class="new-drop">
+                                    <span class="nicon filt-icon"></span>
+                                    <span class="ntext filt-text">New</span>
+                                    <span class="narr" onclick="arrowaction()">
+                                        <div class="drop-con">
+                                            <div class="drop-list">New</div>
+                                            <div class="drop-list">Views</div>
+                                            <div class="drop-list">Score</div>
+                                        </div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <div class="elements-con">
+                        <div class="element-one">
+                            <div class="about-con">
+                                <div class="i1">
+                                    <span class="n1">Answers</span>
+                                    <span class="m1">3</span>
+                                </div>
+                                <div class="i1">
+                                    <span class="n1">Scores</span>
+                                    <span class="m1">4</span>
+                                </div>
+                                <div class="i1">
+                                    <span class="n1">Views</span>
+                                    <span class="m1">22</span>
+                                </div>
+                            </div>
+                            <div class="content-con">
+                                <div class="head">
+                                    <p>How to ask question ?</p>
+                                </div>
+                                <div class="para">
+                                    Unique and powerful suite of software to run your entire business, brought to you by a
+                                    company with the long term vision to transform the way you work.</div>
+                                <div class="link-con">
+                                    <div class="footer-con">
+                                        <div class="first">
+                                            <button class="button">quality</button>
+                                        </div>
+                                        <div class="second">
+                                            <span class="ask askcol">ilaya.cmr2004@</span>
+                                            <span class="ask">asked on feb 22</span>
+                                        </div>
+                                        <div class="third">
+                                            <img src="profile.png" alt="" id="p1001">
+                                            <span class="pho-hov-con">
+                                                <div class="pho-text">
+                                                    <span class="ask askcol">Esakkivasu</span>
+                                                    <span class="p1"></span>
+                                                </div>
+                                                <div class="pho-about">
+                                                    <div class="e1 ask">4.3k</div>
+                                                    <div class="e1 ask">
+                                                        <span class="z1"></span>
+                                                        <span class="ask">2</span>
+                                                    </div>
+                                                    <div class="e1 ask">
+                                                        <span class="z1 z2"></span>
+                                                        <span class="ask">22</span>
+                                                    </div>
+                                                    <div class="e1 ask">
+                                                        <span class="z1 z3"></span>
+                                                        <span class="ask">26</span>
+                                                    </div>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="element-one">
+                            <div class="about-con">
+                                <div class="i1">
+                                    <span class="n1">Answers</span>
+                                    <span class="m1">3</span>
+                                </div>
+                                <div class="i1">
+                                    <span class="n1">Scores</span>
+                                    <span class="m1">4</span>
+                                </div>
+                                <div class="i1">
+                                    <span class="n1">Views</span>
+                                    <span class="m1">22</span>
+                                </div>
+                            </div>
+                            <div class="content-con">
+                                <div class="head">
+                                    <p>How to ask question ?</p>
+                                </div>
+                                <div class="para">
+                                    Unique and powerful suite of software to run your entire business, brought to you by a
+                                    company with the long term vision to transform the way you work.</div>
+                                <div class="link-con">
+                                    <div class="footer-con">
+                                        <div class="first">
+                                            <button class="button">quality</button>
+                                        </div>
+                                        <div class="second">
+                                            <span class="ask askcol">ilaya.cmr2004@</span>
+                                            <span class="ask">asked on feb 22</span>
+                                        </div>
+                                        <div class="third">
+                                            <img src="profile.png" alt="" id="p1001">
+                                            <span class="pho-hov-con">
+                                                <div class="pho-text">
+                                                    <span class="ask askcol">Esakkivasu</span>
+                                                    <span class="p1"></span>
+                                                </div>
+                                                <div class="pho-about">
+                                                    <div class="e1 ask">4.3k</div>
+                                                    <div class="e1 ask">
+                                                        <span class="z1"></span>
+                                                        <span class="ask">2</span>
+                                                    </div>
+                                                    <div class="e1 ask">
+                                                        <span class="z1 z2"></span>
+                                                        <span class="ask">22</span>
+                                                    </div>
+                                                    <div class="e1 ask">
+                                                        <span class="z1 z3"></span>
+                                                        <span class="ask">26</span>
+                                                    </div>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="element-one">
+                            <div class="about-con">
+                                <div class="i1">
+                                    <span class="n1">Answers</span>
+                                    <span class="m1">3</span>
+                                </div>
+                                <div class="i1">
+                                    <span class="n1">Scores</span>
+                                    <span class="m1">4</span>
+                                </div>
+                                <div class="i1">
+                                    <span class="n1">Views</span>
+                                    <span class="m1">22</span>
+                                </div>
+                            </div>
+                            <div class="content-con">
+                                <div class="head">
+                                    <p>How to ask question ?</p>
+                                </div>
+                                <div class="para">
+                                    Unique and powerful suite of software to run your entire business, brought to you by a
+                                    company with the long term vision to transform the way you work.</div>
+                                <div class="link-con">
+                                    <div class="footer-con">
+                                        <div class="first">
+                                            <button class="button">quality</button>
+                                        </div>
+                                        <div class="second">
+                                            <span class="ask askcol">ilaya.cmr2004@</span>
+                                            <span class="ask">asked on feb 22</span>
+                                        </div>
+                                        <div class="third">
+                                            <img src="profile.png" alt="" id="p1001">
+                                            <span class="pho-hov-con">
+                                                <div class="pho-text">
+                                                    <span class="ask askcol">Esakkivasu</span>
+                                                    <span class="p1"></span>
+                                                </div>
+                                                <div class="pho-about">
+                                                    <div class="e1 ask">4.3k</div>
+                                                    <div class="e1 ask">
+                                                        <span class="z1"></span>
+                                                        <span class="ask">2</span>
+                                                    </div>
+                                                    <div class="e1 ask">
+                                                        <span class="z1 z2"></span>
+                                                        <span class="ask">22</span>
+                                                    </div>
+                                                    <div class="e1 ask">
+                                                        <span class="z1 z3"></span>
+                                                        <span class="ask">26</span>
+                                                    </div>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="element-one">
+                            <div class="about-con">
+                                <div class="i1">
+                                    <span class="n1">Answers</span>
+                                    <span class="m1">3</span>
+                                </div>
+                                <div class="i1">
+                                    <span class="n1">Scores</span>
+                                    <span class="m1">4</span>
+                                </div>
+                                <div class="i1">
+                                    <span class="n1">Views</span>
+                                    <span class="m1">22</span>
+                                </div>
+                            </div>
+                            <div class="content-con">
+                                <div class="head">
+                                    <p>How to ask question ?</p>
+                                </div>
+                                <div class="para">
+                                    Unique and powerful suite of software to run your entire business, brought to you by a
+                                    company with the long term vision to transform the way you work.</div>
+                                <div class="link-con">
+                                    <div class="footer-con">
+                                        <div class="first">
+                                            <button class="button">quality</button>
+                                        </div>
+                                        <div class="second">
+                                            <span class="ask askcol">ilaya.cmr2004@</span>
+                                            <span class="ask">asked on feb 22</span>
+                                        </div>
+                                        <div class="third">
+                                            <img src="profile.png" alt="" id="p1001">
+                                            <span class="pho-hov-con">
+                                                <div class="pho-text">
+                                                    <span class="ask askcol">Esakkivasu</span>
+                                                    <span class="p1"></span>
+                                                </div>
+                                                <div class="pho-about">
+                                                    <div class="e1 ask">4.3k</div>
+                                                    <div class="e1 ask">
+                                                        <span class="z1"></span>
+                                                        <span class="ask">2</span>
+                                                    </div>
+                                                    <div class="e1 ask">
+                                                        <span class="z1 z2"></span>
+                                                        <span class="ask">22</span>
+                                                    </div>
+                                                    <div class="e1 ask">
+                                                        <span class="z1 z3"></span>
+                                                        <span class="ask">26</span>
+                                                    </div>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div class="element-one">
+                            <div class="about-con">
+                                <div class="i1">
+                                    <span class="n1">Answers</span>
+                                    <span class="m1">3</span>
+                                </div>
+                                <div class="i1">
+                                    <span class="n1">Scores</span>
+                                    <span class="m1">4</span>
+                                </div>
+                                <div class="i1">
+                                    <span class="n1">Views</span>
+                                    <span class="m1">22</span>
+                                </div>
+                            </div>
+                            <div class="content-con">
+                                <div class="head">
+                                    <p>How to ask question ?</p>
+                                </div>
+                                <div class="para">
+                                    Unique and powerful suite of software to run your entire business, brought to you by a
+                                    company with the long term vision to transform the way you work.</div>
+                                <div class="link-con">
+                                    <div class="footer-con">
+                                        <div class="first">
+                                            <button class="button">quality</button>
+                                        </div>
+                                        <div class="second">
+                                            <span class="ask askcol">ilaya.cmr2004@</span>
+                                            <span class="ask">asked on feb 22</span>
+                                        </div>
+                                        <div class="third">
+                                            <img src="profile.png" alt="" id="p1001">
+                                            <span class="pho-hov-con">
+                                                <div class="pho-text">
+                                                    <span class="ask askcol">Esakkivasu</span>
+                                                    <span class="p1"></span>
+                                                </div>
+                                                <div class="pho-about">
+                                                    <div class="e1 ask">4.3k</div>
+                                                    <div class="e1 ask">
+                                                        <span class="z1"></span>
+                                                        <span class="ask">2</span>
+                                                    </div>
+                                                    <div class="e1 ask">
+                                                        <span class="z1 z2"></span>
+                                                        <span class="ask">22</span>
+                                                    </div>
+                                                    <div class="e1 ask">
+                                                        <span class="z1 z3"></span>
+                                                        <span class="ask">26</span>
+                                                    </div>
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fix-box">
+                    <div class="aside-con">
+                        <div class="askqus-con">
+                            <div class="users-det">
+                                <span class="num">222</span>
+                                <span class="ask">Question(s)</span>
+                                <span>
+                                    <button class="subscribe">subscribe!</button>
+                                </span>
+                            </div>
+                            <button class="askquestion">ASK QUESTION</button>
+                        </div>
+                        <div class="tags">
+                            <span class="tag-con">Follow tags</span>
+                            <a class="edit askcol">Edit</a>
+                        </div>
+                        <div class="tags">
+                            <span class="tag-con">Follow tags</span>
+                            <a class="edit askcol">Edit</a>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</body>
+
+</html>
